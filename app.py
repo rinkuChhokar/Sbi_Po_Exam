@@ -2,7 +2,7 @@ from flask import Flask,render_template
 
 
 app=Flask(__name__,template_folder='templates')
-app.secret_key = 'super secret key'
+app.secret_key = 'super secret key1'
 
 @app.route("/")
 
@@ -11,5 +11,5 @@ def sbi():
 
 
 if __name__ == "__main__":
-    app.run(debug=False)   
+    app.run(debug=True)   
 
